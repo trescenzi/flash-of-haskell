@@ -1,6 +1,7 @@
-
+--The first time I realise just how cool list comprehensions were
 rightTriangles = [ (a,b,c) | c <- [1..], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2]
 
+--The lovely quicksort implemented in Haskell
 quicksort :: (Ord a) => [a] -> [a]  
 quicksort [] = []  
 quicksort (x:xs) =   
